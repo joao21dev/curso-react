@@ -17,7 +17,7 @@ describe('<Button />', () => {
     render(<Button text="Load more" onClick={fn} />);
 
     const button = screen.getByRole('button', { name: /load more/i });
-    
+
     userEvent.click(button);
 
     expect(fn).toHaveBeenCalledTimes(1);
@@ -38,7 +38,7 @@ describe('<Button />', () => {
 
   it('should match snapshot', () => {
     const fn = jest.fn();
-    const {container} = render(<Button text="Load more" disabled={false} onClick={fn} />);
+    const { container } = render(<Button text="Load more" disabled={false} onClick={fn} />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

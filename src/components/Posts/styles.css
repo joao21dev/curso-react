@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 30px;
-} 
+}
 
 .post {
   background: #fff;
-  box-shadow: 0 0 10px rgba(148, 0, 0, 0.5); 
+  box-shadow: 0 0 10px rgba(148, 0, 0, 0.5);
   transition: transform 100ms ease-in-out;
 }
 
@@ -14,10 +14,10 @@
   transform: scale(1.05);
 }
 
-.post img{
+.post img {
   max-width: 100%;
 }
 
-.post-content{
+.post-content {
   padding: 30px;
 }
